@@ -1,0 +1,341 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  /*height: calc(100vh - 80px);*/
+}
+.site-title {
+  margin-bottom: 0px;
+}
+.sub-title {
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 0px 0px 20px 0px;
+  margin: 0px 10px 10px 0px;
+}
+.quote {
+  background: #AFE4B5;
+  border: 1px solid #27AE60;
+  border-radius: 15px;
+  margin-top: 0px;
+  margin-left: 23%;
+  margin-right: 23%;
+  padding: 15px 5px;
+  width: auto;
+  font-size: 12px;
+  /*
+  background-color: #AFE4B5;
+  border: 1px solid #27AE60
+  border-radius: 15px;
+  margin: 0px 23%;
+  padding: 1px 5px;
+  width: auto;
+  font-size: 12px;*/
+}
+.quoted-from {
+  font-style: italic;
+  text-align: right;
+}
+.quote form {
+  border-radius: 15px;
+  background: transparent;
+  margin-top: 10px ;
+  margin-bottom: 0px;
+  padding: 25px 0px 60px 20px;
+  width: auto;
+  font-size: 12px;
+}
+.quote1 {
+  background: #AFE4B5;
+  border: 1px solid #27AE60;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-left: 23%;
+  margin-right: 23%;
+  padding: 15px 5px;
+  width: auto;
+  font-size: 12px;
+}
+.quote1 table{
+  margin-left:10px ;
+  margin-right: 10px;
+  height: 100%;
+  width: 100%;
+  min-height: 95%;
+  min-width: 96%;
+  /*border: 1px solid #C0BEE9;*/
+  border-radius: 15px;
+  background-color: transparent;/*#BEE9CA*/
+  width: auto;
+  font-size: 16px;
+  text-align: center;
+}
+.table thead,th,tbody,tr,td{
+  column-span: 0px;
+  border: 1px solid #C0BEE9;
+  border-radius: 5px;
+}
+.table thead, th{
+  font-size: 20px;
+  background-color: #D58981;
+  border: 1px solid pink;
+  border-radius: 10px;
+}
+.try-it-now {
+  background-color: #E74C3C;
+  border: 4px solid #C0392B;
+  border-radius: 20px;
+  height: auto;
+  margin: 20px 35%;
+  color: white;
+  text-align: center;
+  padding: 0px;
+}
+h4 {
+  font-weight: lighter;
+  margin: 15px 0px 0px 0px;
+  padding: 0px;
+}
+
+.try-it-now a {
+  color: white;
+  font-size: 25px;
+}
+
+.blue-page-section {
+  font-size: 16px;
+  background-color: #2C3E50;
+  color: white;
+  padding: 12px 2px;
+}
+
+footer {
+  background-color: #1C2224;
+  color: #46627E;
+  font-size: 13px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #2E80B6;
+  text-decoration: none;
+  width: auto;
+  padding: 10px;
+}
+.input-container{
+  position:relative;
+  margin-bottom:1px;
+}
+.input-container input{
+  margin: 10px 0px 0px;
+  text-align: left;
+  border:1px solid #555; 
+  border-radius: 15px;
+  background:transparent;
+  width:40%;
+  padding:1px 0 1px 0;
+  color:black;
+
+}
+.mylabel{
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+  font-family: 'Times-New-Romen';
+}
+.input-container textarea{
+  margin-top: 15px;
+  width: 98%;
+  min-height:50px;
+  max-width:98%;
+  max-height:50px;
+  background:transparent;
+  color:black;
+  border-radius: 15px;
+}
+.btn {
+  float: right;
+  background-color:#99ccff;
+  outline: none;
+  border: 0;
+  color: #fff;
+  font-weight: unset;
+  font-size: 18px;
+  padding:5px 10px;
+  text-transform:uppercase;
+  margin-top:15px;
+  margin-right: 10px;
+  border-radius:15px;
+  cursor:pointer;
+  position:relative;
+}
+.btn:hover {
+    background-color: green;
+}
+.btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.text-center1{
+  color:#fff; 
+  text-transform:uppercase;
+    font-size: 25px;
+    margin: -12px 10px 20px 0;
+    display: block;
+    text-align: center;
+}
+.text-center2{
+  color:#fff; 
+  text-transform:uppercase;
+    font-size: 15px;
+    font-family: "sans-serif";
+    margin: -12px 10px 20px 0;
+    display: block;
+    text-align: center;
+}
+.text-center3{
+  color:#fff; 
+    font-size: 22px;
+    font-style: italic;
+    font-family: "sans-serif";
+    margin: 0px;
+    display: block;
+    text-align: center;
+}
+.dbtn{
+  background-color:transparent;
+  outline: none;
+  border: 0;
+  color: red;
+  font-weight: unset;
+  font-size: 25px;
+  padding:10px 20px;
+  text-transform:uppercase;
+  text-align: center;
+  margin:0px;
+  cursor:pointer;
+  position:relative;
+}
+.dbtn:hover {
+    background-color: #E2A7A7;
+    border-radius: 40px;
+}
+.dbtn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.ebtn{
+  background-color:transparent;
+  outline: none;
+  border: 0;
+  color: blue;
+  font-weight: unset;
+  font-size: 25px;
+  padding:10px 20px;
+  text-transform:uppercase;
+  text-align: center;
+  margin:0px;
+  cursor:pointer;
+  position:relative;
+}
+.ebtn:hover {
+    background-color: #3CB4A4;
+    border-radius: 40px;
+  }
+.ebtn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
